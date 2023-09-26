@@ -1,25 +1,32 @@
-img{
-    height:200px ;
-    width: 200px
-}
-h2.color-title {
-font-weight: normal;
-}
-h2.color-title#red {
-    color: red ;
-}
-h2.color-title#blue {
-    color: blue ;
-}
-h2.color-title#orange {
-    color: orange ;
-}
-h2.color-title#green {
-    color: green ;
-}
-h2.color-title#yellow {
-    color: yellow ;
-}
-
-
-
+/* Add this to your existing style.css */
+.color-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .color-item {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .color-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .color-title {
+    font-weight: bold;
+    display: none;
+  }
+  
+  .color-description {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .color-description.active {
+    display: block;
+  }
+  
